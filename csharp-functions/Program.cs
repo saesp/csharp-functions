@@ -92,12 +92,10 @@ int sommaElementiArray(int[] array)
 
 
 
-//Una volta completate queste funzioni di utilità di base, e dato il seguente array di numeri [2, 6, 7, 5, 3, 9] già dichiarato nel vostro codice, si vogliono utilizzare le funzioni per:
+//5 Una volta completate queste funzioni di utilità di base, e dato il seguente array di numeri [2, 6, 7, 5, 3, 9] già dichiarato nel vostro codice, si vogliono utilizzare le funzioni per:
 //Stampare l’array di numeri fornito a video
 //Stampare l’array di numeri fornito a video, dove ogni numero è stato prima elevato al quadrato (Verificare che l’array originale non sia stato modificato quindi ristampare nuovamente l’array originale e verificare che sia rimasto [2, 6, 7, 5, 3, 9])
-
 //Stampare la somma di tutti i numeri
-
 //Stampare la somma di tutti i numeri elevati al quadrati
 
 int[] myArray = { 2, 6, 7, 5, 3, 9 };
@@ -120,7 +118,7 @@ Console.WriteLine($"Sum (normal array): {sommaElementiArray(myArray)}");
 
 
 //4
-Console.WriteLine($"Sum (normal array): {sommaElementiArray(ElevaArrayAlQuadrato(myArray))}");
+Console.WriteLine($"Sum (square array): {sommaElementiArray(ElevaArrayAlQuadrato(myArray))}");
 
 
 
