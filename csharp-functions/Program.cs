@@ -40,38 +40,59 @@
 
 //Convert.ToInt32(Console.ReadLine())
 
-int[] myArray = { 1, 2, 3 };
+//int[] myArray = { 1, 2, 3 };
 
-Console.WriteLine($"Normal array:");
+//Console.WriteLine($"Normal array:");
 
-for (int i = 0; i < myArray.Length; i++)
+//for (int i = 0; i < myArray.Length; i++)
+//{
+//    Console.WriteLine(myArray[i]);
+//}
+
+////function
+//int[] ElevaArrayAlQuadrato(int[] array)
+//{
+//    int[] squareArray = new int[array.Length]; 
+
+//    for (int i = 0; i < array.Length; i++)
+//    {
+//        int quadrato = array[i] * array[i];
+
+//        squareArray[i] = quadrato;
+//    }
+
+//    return squareArray;
+//}
+
+//int[] newArray = ElevaArrayAlQuadrato(myArray);
+
+//Console.WriteLine($"Square array:");
+
+//for (int i = 0; i < newArray.Length; i++)
+//{
+//    Console.WriteLine(newArray[i]);
+//}
+
+
+
+
+
+//4 int sommaElementiArray(int[] array): che preso un array di numeri interi, restituisca la somma totale di tutti gli elementi dell’array.
+
+int sommaElementiArray(int[] array)
 {
-    Console.WriteLine(myArray[i]);
-}
+    int sum = 0;
 
-//function
-int[] ElevaArrayAlQuadrato(int[] array)
-{
-    int[] squareArray = new int[array.Length]; 
-    
     for (int i = 0; i < array.Length; i++)
     {
-        int quadrato = array[i] * array[i];
-
-        squareArray[i] = quadrato;
+        sum += array[i]; 
     }
 
-    return squareArray;
+    return sum;
 }
 
-int[] newArray = ElevaArrayAlQuadrato(myArray);
-
-Console.WriteLine($"Square array:");
-
-for (int i = 0; i < newArray.Length; i++)
-{
-    Console.WriteLine(newArray[i]);
-}
+int[] myArray = { 1, 2, 3 }; 
+Console.WriteLine(sommaElementiArray(myArray));
 
 
 
@@ -82,11 +103,6 @@ for (int i = 0; i < newArray.Length; i++)
 
 
 
-
-
-
-
-//int sommaElementiArray(int[] array): che preso un array di numeri interi, restituisca la somma totale di tutti gli elementi dell’array.
 //Una volta completate queste funzioni di utilità di base, e dato il seguente array di numeri [2, 6, 7, 5, 3, 9] già dichiarato nel vostro codice, si vogliono utilizzare le funzioni per:
 //Stampare l’array di numeri fornito a video
 //Stampare l’array di numeri fornito a video, dove ogni numero è stato prima elevato al quadrato (Verificare che l’array originale non sia stato modificato quindi ristampare nuovamente l’array originale e verificare che sia rimasto [2, 6, 7, 5, 3, 9])
